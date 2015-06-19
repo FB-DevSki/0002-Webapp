@@ -1,29 +1,36 @@
 ﻿extends layout
 
 block content
-  .jumbotron
+  .jumbotron 
     h2 APP naam
-    p.lead 
-        img(class='img-responsive' src='images/restaurant.jpg' class='img-rounded' alt='Cinque Terre' width='450' height='300')
+    p.lead.visible-xs
+        img(class='img-responsive' src='images/restaurant.jpg' class='img-rounded' alt='Cinque Terre' )
+        a.btn.btn-primary.btn-block(href='http://www.foxbear.nl/') dinner nearby &raquo;
     p
-      a.btn.btn-primary.btn-large(href='http://www.foxbear.nl/') dinner nearby &raquo;
-  .row
-    .col-md-4
-      
-      p.lead
-        img(class='img-responsive' src='images/lunch.jpg' class='img-rounded' alt='Cinque Terre' width='500' height='180')
-      p
-        a.btn.btn-default(href='http://www.foxbear.nl/')  &raquo;
-        a.btn.btn-default(href='http://www.foxbear.nl/') Your taste &raquo;
-    .col-md-4
-      
-      p 
-        img(class='img-responsive' src='images/beleef.png' class='img-rounded' alt='Cinque Terre' width='500' height='200')
+    p.hidden-xs
+      img(class='img-responsive' src='images/Restaurant-lg.jpg' class='img-rounded' alt='Cinque Terre' )
+      Tekst en foto worden vervangen wanneer je de site bezoekt met je samrtphone.
+    p
 
+  .row
+    .col-md-3   
+      p.lead
+        img(class='img-responsive' src='images/lunch.jpg' class='img-rounded' alt='Cinque Terre')
+        a.btn.btn-block.btn-success(src='images/lunch.jpg' href='http://www.foxbear.nl/') Your taste &raquo;
       p
-        a.btn.btn-default(href='https://www.foxbear.nl/') kies een gerecht &raquo;
-    .col-md-4
+    .col-md-3     
+      p
+        img(class='img-responsive' src='images/beleef.png' class='img-rounded' alt='Cinque Terre')
+        a.btn.btn-block.btn-success(href='https://www.foxbear.nl/') kies een gerecht &raquo;
+      p
+    .col-md-3 
       h2 Nieuwe 
       p moeten we nog verzinnen 
       p
-        a.btn.btn-default(href='http://www.foxbear.nl') Meld je aan &raquo;
+        a.btn.btn-block.btn-success(href='http://www.foxbear.nl') Meld je aan &raquo;
+
+     .col-md-3
+      h2 Nieuwe 
+      p. test sm6
+      p
+        a.btn.btn-block(class='btn btn-primary' href='http://www.foxbear.nl') Meld je aan &raquo;

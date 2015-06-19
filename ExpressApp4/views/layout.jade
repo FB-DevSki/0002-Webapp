@@ -11,7 +11,7 @@ html
   body
     .navbar.navbar-inverse.navbar-fixed-top
       .container
-        .navbar-header
+        .navbar-header.hidden-xs
           button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
             span.icon-bar
             span.icon-bar
@@ -27,10 +27,9 @@ html
               a(href='/contact') Nieuw
     .container.body-content
       block content
-       img(src='images/boodschappen.jpg')
       hr
       footer
-        p &copy; #{year} - My Express Application
+        p &copy; #{year} - Foxbear Application
 
     script(src='/javascripts/jquery-1.10.2.js')
     script(src='/javascripts/bootstrap.js')
